@@ -13,7 +13,13 @@ public class ControllerMethode {
         for(int i = 1; i <= number; i++) {
             factor *= i;
         }
+        this.total = this.total +factor;
         return factor;
+    }
+
+    @GetMapping("api/factorial/total")
+    public int getTotal() {
+        return this.total;
     }
 
 
