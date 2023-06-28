@@ -17,9 +17,6 @@ public class ControllerMethode {
         return factor;
     }
 
-    @GetMapping("api/factorial/total")
-    public int getTotal() {
-        return this.total;
-    }
+
 
 }
